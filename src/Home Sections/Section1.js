@@ -1,12 +1,7 @@
 import React from 'react'
 import sec1img from '../utils/sec1img.jpg'
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-import img1 from '../utils/img1.png'
-import img2 from '../utils/img2.png'
-import img3 from '../utils/img3.png'
-import img4 from '../utils/img4.png'
-import img5 from '../utils/img5.png'
-import img6 from '../utils/img6.png'
+
 
 const Section1 = () => {
     const BoldFont = {
@@ -35,36 +30,10 @@ const Section1 = () => {
             </button>
             <p className='text-white font-semibold text-[0.8rem] bg-[#1D1D1D] py-[0.7rem] px-[1rem] rounded-full'><span className='text-[#6507FF]'>100 free credits/month</span> no credit card required</p>
         </div>
-        <div className='sec1gradient relative' style={{...MediumPoppins}}>
+        <div className='sec1gradient '>
           <img src={sec1img} alt="" className='rounded-t-[3.5vw] w-[68.958vw] h-[27.135vw]' />
-          <div className='grid grid-rows-2 grid-flow-col gap-4 transperant-black absolute'>
-            <div>
-                <h1 className='text-white flex gap-[1rem]'><img src={img1}/> Generate Fill</h1>
-                <p className='text-white font-normal'>Unleash the power of image creation with ease. Produce stunning visuals and graphics.</p>
-            </div>
-            <div>
-                <h1 className='text-white flex gap-[1rem]'><img src={img2}/> Generate Fill</h1>
-                <p className='text-white font-normal'>Unleash the power of image creation with ease. Produce stunning visuals and graphics.</p>
-            </div>
-            <div>
-                <h1 className='text-white flex gap-[1rem]'><img src={img3}/> Generate Fill</h1>
-                <p className='text-white font-normal'>Unleash the power of image creation with ease. Produce stunning visuals and graphics.</p>
-            </div>
-            <div>
-                <h1 className='text-white flex gap-[1rem]'><img src={img4}/> Generate Fill</h1>
-                <p className='text-white font-normal'>Unleash the power of image creation with ease. Produce stunning visuals and graphics.</p>
-            </div>
-            <div>
-                <h1 className='text-white flex gap-[1rem]'><img src={img5}/> Generate Fill</h1>
-                <p className='text-white font-normal'>Unleash the power of image creation with ease. Produce stunning visuals and graphics.</p>
-            </div>
-            <div>
-                <h1 className='text-white flex gap-[1rem]'><img src={img6}/> Generate Fill</h1>
-                <p className='text-white font-normal'>Unleash the power of image creation with ease. Produce stunning visuals and graphics.</p>
-            </div>
-            
-          </div>
         </div>
+        
     </div>
   )
 }
