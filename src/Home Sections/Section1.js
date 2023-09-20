@@ -17,7 +17,7 @@ const Section1 = () => {
     <div className='mt-24 flex flex-col justify-center gap-[8vw] items-center'>
         <div className='text-center flex flex-col items-center justify-center gap-[2rem]'>
             <h1 className='text-white text-[4.4rem] m-0' style={{...BoldFont,lineHeight:'1'}}>Explore the <span>Power</span> of AI!</h1>
-            <p className='text-[#CECECE] text-[0.9rem] font-small' style={MediumPoppins}>generate.one is a suite of magical AI tools. Generate original images at scale, modify photos,<br/>expand pictures beyond their original borders, or create custom AI models.</p>
+            <p className='text-[#CECECE] text-[0.9rem]  font-medium' style={MediumPoppins}>generate.one is a suite of magical AI tools. Generate original images at scale, modify photos,<br/>expand pictures beyond their original borders, or create custom AI models.</p>
             <button className='rounded-full border-[1px] border-[#2A2A2A] lg:w-[20rem] text-white flex lg:h-[3.5rem] justify-center items-center' style={MediumPoppins} >
                 <span className='w-[70%]'>
                 Get Started   
