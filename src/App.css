@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 
+
 .sec1gradient{
-    background-image: linear-gradient(#5C39E9,#AE1FF1,#5EFFBB,#0C7CFF);
     border-radius: 3.5vw 3.5vw 0 0;
     display: flex;
     width: 77.417vw;
     height: 30.667vw;
     align-items: end;
+    background-image: linear-gradient(#5C39E9,#AE1FF1,#5EFFBB,#0C7CFF);
     justify-content: center;
 }
 
@@ -19,5 +20,11 @@
     background: rgba(16, 16, 16, 0.86);
     backdrop-filter: blur(15.5px);
 }
+
+.gradiantbtn{
+    background-image: linear-gradient(#5C39E9,#AE1FF1,#5EFFBB,#0C7CFF);
+}
+
+
 
 

@@ -5,6 +5,7 @@ import img3 from '../utils/img3.png'
 import img4 from '../utils/img4.png'
 import img5 from '../utils/img5.png'
 import img6 from '../utils/img6.png'
+import { Fade } from 'react-reveal'
 
 const fields=[{
     image:img1,
@@ -36,17 +37,24 @@ const Section2 = () => {
 
     const MediumPoppins ={
         fontFamily:'Poppins, sans-serif',
+        fontWeight:'600'
+    }
+    const RegularPoppins={
+        fontFamily:'Poppins, sans-serif',
+        fontWeight:'500'
     }
 
   return (
-   <div className=' flex justify-center items-center relative lg:bottom-[3rem]'>
-        <div className='grid lg:grid-rows-2 md:grid-rows-3 grid-rows-6 grid-flow-col gap-4 transperant-black w-[80%] lg:p-[5rem] w-[85%]'>
+   <div className=' flex justify-center items-center relative lg:bottom-[3rem] md:bottom-[1.5rem]'>
+        <div className='grid lg:grid-rows-2 md:grid-rows-3 grid-rows-6 grid-flow-col gap-4 transperant-black w-[80%] lg:p-[5rem] md:p-[3rem] sm:p-[2rem] w-[85%]'>
             {fields.map((field)=>{
                 return(
-                <div className='lg:m-[1rem] flex flex-col gap-[1rem]'>
-                    <h1 className='text-white flex gap-[1rem] items-center' style={{...MediumPoppins}} ><img src={field.image}/> {field.heading}</h1>
-                    <p className='text-white font-normal text-[#CBCBCB]'>{field.para}</p>
-                </div>
+                <Fade bottom>
+                    <div className='lg:m-[1rem] m-[2rem]  md:m-[0.8rem] flex flex-col gap-[1rem]'>
+                        <h1 className='text-white flex gap-[1rem] items-center' style={{...MediumPoppins}} ><img src={field.image} className='h-auto lg:w-[1.9rem] md:w-[23px]'/> {field.heading}</h1>
+                        <p className='text-white font-normal md:text-[14px] lg:text-[0.8rem] text-[#CBCBCB] medium-pup' style={{...RegularPoppins}}>{field.para}</p>
+                    </div>
+                </Fade>
                 )
             })}
         </div>
